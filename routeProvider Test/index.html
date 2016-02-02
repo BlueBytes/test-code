@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
 	<title>route provider</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.5/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.5/angular-route.js"></script>
 	<script src="app.js"></script>
 </head>
 
-<body>
+<body ng-app="routeApp">
   <div>
     <header>
       <h1>index</h1>
     </header>
     <nav>
-      <p><a href="/">Home</a></p>
-      <p><a href="/contact">Contact</a></p>
+      <p><a href="#home">Home</a></p>
+      <p><a href="#member">member</a></p>
+      <p><a href="#about">about</a></p>
     </nav>
 
-    <div>
-      
-    </div>
+	<ng-view></ng-view>
 
     <footer>
      <p>&copy; Copyright  by wim</p>
